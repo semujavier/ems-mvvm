@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol LiveRepository {
-    func getLive() -> Live
+    func getLive() -> Observable<Live>
 }

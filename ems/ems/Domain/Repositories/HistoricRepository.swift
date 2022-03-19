@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol HistoricRepository {
-    func getHistoric() -> [HistoricItem]
+    func getHistoric() -> Observable<[HistoricItem]>
 }

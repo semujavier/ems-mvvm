@@ -10,6 +10,7 @@ import Foundation
 struct LiveDTO: Decodable {
     let solarPower: Double
     let quasarsPower: Double
+    let gridPower: Double
     let buildingDemand: Double
     let systemSoc: Double
     let totalEnergy: Int
@@ -20,6 +21,7 @@ extension LiveDTO: Mappable {
     func toEntity() -> Live {
         return Live(solarPower: solarPower,
                     quasarsPower: quasarsPower,
+                    gridPower: gridPower,
                     buildingDemand: buildingDemand,
                     systemSoc: systemSoc,
                     totalEnergy: totalEnergy,

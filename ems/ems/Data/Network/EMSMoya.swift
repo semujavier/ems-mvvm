@@ -8,7 +8,14 @@
 import Foundation
 import Moya
 
-let provider = MoyaProvider<EMSAPI>()
+let logger = NetworkLoggerPlugin(configuration: .init(logOptions: .verbose))
+
+let provider = MoyaProvider<EMSAPI>(plugins: [logger])
+let decoder: JSONDecoder = {
+    let decoder = JSONDecoder()
+    decoder.keyDecodingStrategy = .convertFromSnakeCase
+    return decoder
+}()
 
 enum EMSAPI {
     case historic
