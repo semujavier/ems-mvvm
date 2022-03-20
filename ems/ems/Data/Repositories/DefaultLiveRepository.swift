@@ -1,21 +1,27 @@
 //
-//  DefaultLiveRepository.swift
+//  DefaultHistoricRepository.swift
 //  ems
 //
 //  Created by Javier Serrano Muñoz on 19/3/22.
 //
 
 import Foundation
-import RxMoya
 import RxSwift
 
-class DefaultHistoricRepository: HistoricRepository {
-    func getHistoric() -> Observable<[HistoricItem]> {
-        provider.rx
-            .request(.historic)
-            .map([HistoricDTO].self)
-            .map {
-                $0.map { $0.toEntity() }
-            }.asObservable()
+enum DataError: Error {
+    case unableToLoad
+}
+
+class DefaultLiveRepository: LiveRepository {
+    func getLive() -> Observable<Live> {
+        Single<LiveDTO>.create { single in
+            if let liveData = Bundle.main.loadJSON(type: LiveDTO.self, filename: "live_data") {
+                single(.success(liveData))
+            } else {
+                single(.failure((DataError.unableToLoad)))
+            }
+            return Disposables.create()
+        }.map { $0.toEntity() }
+            .asObservable()
     }
 }

@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		F56ACD8A27E602BF00828F09 /* GetHistoricUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8927E602BF00828F09 /* GetHistoricUseCase.swift */; };
 		F56ACD8C27E603B000828F09 /* GetLiveUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8B27E603B000828F09 /* GetLiveUseCase.swift */; };
-		F56ACD8E27E6089800828F09 /* DefaultHistoricRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8D27E6089800828F09 /* DefaultHistoricRepository.swift */; };
-		F56ACD9027E608A900828F09 /* DefaultLiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8F27E608A900828F09 /* DefaultLiveRepository.swift */; };
+		F56ACD8E27E6089800828F09 /* DefaultLiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8D27E6089800828F09 /* DefaultLiveRepository.swift */; };
+		F56ACD9027E608A900828F09 /* DefaultHistoricRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8F27E608A900828F09 /* DefaultHistoricRepository.swift */; };
 		F56ACD9227E60FBB00828F09 /* historic_data.json in Resources */ = {isa = PBXBuildFile; fileRef = F56ACD9127E60FBB00828F09 /* historic_data.json */; };
+		F56ACD9427E6105C00828F09 /* live_data.json in Resources */ = {isa = PBXBuildFile; fileRef = F56ACD9327E6105C00828F09 /* live_data.json */; };
+		F56ACD9627E610B400828F09 /* Bundle+LoadJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD9527E610B400828F09 /* Bundle+LoadJSON.swift */; };
+		F56ACD9827E616FA00828F09 /* Double+Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD9727E616FA00828F09 /* Double+Decimal.swift */; };
+		F56ACD9A27E77A6E00828F09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD9927E77A6E00828F09 /* DetailViewController.swift */; };
+		F56ACD9C27E77A8500828F09 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD9B27E77A8500828F09 /* DetailViewModel.swift */; };
+		F56ACD9E27E77A8E00828F09 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F56ACD9D27E77A8E00828F09 /* DetailView.xib */; };
 		F582523327E5E30000F63FD2 /* WidgetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582523227E5E30000F63FD2 /* WidgetsViewModel.swift */; };
-		F582523A27E5E80400F63FD2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F582523927E5E80400F63FD2 /* RxCocoa */; };
 		F582523D27E5F3B500F63FD2 /* Double+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F582523C27E5F3B500F63FD2 /* Double+Percentage.swift */; };
+		F596521327E7803A009B19A8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F596521227E7803A009B19A8 /* RxCocoa */; };
+		F596521527E7803A009B19A8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F596521427E7803A009B19A8 /* RxSwift */; };
+		F596521827E7806F009B19A8 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = F596521727E7806F009B19A8 /* Charts */; };
+		F596521B27E78C41009B19A8 /* RxGesture in Frameworks */ = {isa = PBXBuildFile; productRef = F596521A27E78C41009B19A8 /* RxGesture */; };
 		F5BE74D127E5C99C007B435C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE74D027E5C99C007B435C /* AppDelegate.swift */; };
 		F5BE74D327E5C99C007B435C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE74D227E5C99C007B435C /* SceneDelegate.swift */; };
 		F5BE74D527E5C99C007B435C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE74D427E5C99C007B435C /* ViewController.swift */; };
@@ -24,14 +33,11 @@
 		F5BE74E827E5C99E007B435C /* emsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE74E727E5C99E007B435C /* emsTests.swift */; };
 		F5BE74F227E5C99E007B435C /* emsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE74F127E5C99E007B435C /* emsUITests.swift */; };
 		F5BE74F427E5C99E007B435C /* emsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE74F327E5C99E007B435C /* emsUITestsLaunchTests.swift */; };
-		F5BE750C27E5CB27007B435C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = F5BE750B27E5CB27007B435C /* Moya */; };
-		F5BE750E27E5CB27007B435C /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = F5BE750D27E5CB27007B435C /* RxMoya */; };
 		F5BE751127E5CB7F007B435C /* HistoricDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE750F27E5CB7F007B435C /* HistoricDTO.swift */; };
 		F5BE751227E5CB7F007B435C /* LiveDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751027E5CB7F007B435C /* LiveDTO.swift */; };
 		F5BE751527E5CBA3007B435C /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751427E5CBA3007B435C /* Mappable.swift */; };
 		F5BE751827E5CBCF007B435C /* Live.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751627E5CBCF007B435C /* Live.swift */; };
 		F5BE751927E5CBCF007B435C /* HistoricItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751727E5CBCF007B435C /* HistoricItem.swift */; };
-		F5BE751B27E5CCC4007B435C /* EMSMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751A27E5CCC4007B435C /* EMSMoya.swift */; };
 		F5BE751D27E5CF96007B435C /* HistoricRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751C27E5CF96007B435C /* HistoricRepository.swift */; };
 		F5BE751F27E5CFAF007B435C /* LiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE751E27E5CFAF007B435C /* LiveRepository.swift */; };
 		F5BE752127E5D288007B435C /* WidgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BE752027E5D288007B435C /* WidgetsViewController.swift */; };
@@ -58,9 +64,15 @@
 /* Begin PBXFileReference section */
 		F56ACD8927E602BF00828F09 /* GetHistoricUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoricUseCase.swift; sourceTree = "<group>"; };
 		F56ACD8B27E603B000828F09 /* GetLiveUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLiveUseCase.swift; sourceTree = "<group>"; };
-		F56ACD8D27E6089800828F09 /* DefaultHistoricRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHistoricRepository.swift; sourceTree = "<group>"; };
-		F56ACD8F27E608A900828F09 /* DefaultLiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLiveRepository.swift; sourceTree = "<group>"; };
+		F56ACD8D27E6089800828F09 /* DefaultLiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultLiveRepository.swift; sourceTree = "<group>"; };
+		F56ACD8F27E608A900828F09 /* DefaultHistoricRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHistoricRepository.swift; sourceTree = "<group>"; };
 		F56ACD9127E60FBB00828F09 /* historic_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = historic_data.json; sourceTree = "<group>"; };
+		F56ACD9327E6105C00828F09 /* live_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = live_data.json; sourceTree = "<group>"; };
+		F56ACD9527E610B400828F09 /* Bundle+LoadJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+LoadJSON.swift"; sourceTree = "<group>"; };
+		F56ACD9727E616FA00828F09 /* Double+Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Decimal.swift"; sourceTree = "<group>"; };
+		F56ACD9927E77A6E00828F09 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F56ACD9B27E77A8500828F09 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		F56ACD9D27E77A8E00828F09 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
 		F582523227E5E30000F63FD2 /* WidgetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsViewModel.swift; sourceTree = "<group>"; };
 		F582523C27E5F3B500F63FD2 /* Double+Percentage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Percentage.swift"; sourceTree = "<group>"; };
 		F5BE74CD27E5C99C007B435C /* ems.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ems.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,7 +93,6 @@
 		F5BE751427E5CBA3007B435C /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
 		F5BE751627E5CBCF007B435C /* Live.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Live.swift; sourceTree = "<group>"; };
 		F5BE751727E5CBCF007B435C /* HistoricItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoricItem.swift; sourceTree = "<group>"; };
-		F5BE751A27E5CCC4007B435C /* EMSMoya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMSMoya.swift; sourceTree = "<group>"; };
 		F5BE751C27E5CF96007B435C /* HistoricRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricRepository.swift; sourceTree = "<group>"; };
 		F5BE751E27E5CFAF007B435C /* LiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRepository.swift; sourceTree = "<group>"; };
 		F5BE752027E5D288007B435C /* WidgetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsViewController.swift; sourceTree = "<group>"; };
@@ -93,9 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F582523A27E5E80400F63FD2 /* RxCocoa in Frameworks */,
-				F5BE750E27E5CB27007B435C /* RxMoya in Frameworks */,
-				F5BE750C27E5CB27007B435C /* Moya in Frameworks */,
+				F596521527E7803A009B19A8 /* RxSwift in Frameworks */,
+				F596521827E7806F009B19A8 /* Charts in Frameworks */,
+				F596521B27E78C41009B19A8 /* RxGesture in Frameworks */,
+				F596521327E7803A009B19A8 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +132,8 @@
 			isa = PBXGroup;
 			children = (
 				F582523C27E5F3B500F63FD2 /* Double+Percentage.swift */,
+				F56ACD9527E610B400828F09 /* Bundle+LoadJSON.swift */,
+				F56ACD9727E616FA00828F09 /* Double+Decimal.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -202,16 +216,19 @@
 			isa = PBXGroup;
 			children = (
 				F5BE750427E5C9E3007B435C /* Widgets */,
-				F5BE750327E5C9DC007B435C /* Historic */,
+				F5BE750327E5C9DC007B435C /* Detail */,
 			);
 			path = Features;
 			sourceTree = "<group>";
 		};
-		F5BE750327E5C9DC007B435C /* Historic */ = {
+		F5BE750327E5C9DC007B435C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				F56ACD9927E77A6E00828F09 /* DetailViewController.swift */,
+				F56ACD9B27E77A8500828F09 /* DetailViewModel.swift */,
+				F56ACD9D27E77A8E00828F09 /* DetailView.xib */,
 			);
-			path = Historic;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		F5BE750427E5C9E3007B435C /* Widgets */ = {
@@ -227,8 +244,8 @@
 		F5BE750527E5CA05007B435C /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				F56ACD8D27E6089800828F09 /* DefaultHistoricRepository.swift */,
-				F56ACD8F27E608A900828F09 /* DefaultLiveRepository.swift */,
+				F56ACD8D27E6089800828F09 /* DefaultLiveRepository.swift */,
+				F56ACD8F27E608A900828F09 /* DefaultHistoricRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -236,9 +253,9 @@
 		F5BE750627E5CA14007B435C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				F56ACD9327E6105C00828F09 /* live_data.json */,
 				F56ACD9127E60FBB00828F09 /* historic_data.json */,
 				F5BE751327E5CB82007B435C /* DTO */,
-				F5BE751A27E5CCC4007B435C /* EMSMoya.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -297,9 +314,10 @@
 			);
 			name = ems;
 			packageProductDependencies = (
-				F5BE750B27E5CB27007B435C /* Moya */,
-				F5BE750D27E5CB27007B435C /* RxMoya */,
-				F582523927E5E80400F63FD2 /* RxCocoa */,
+				F596521227E7803A009B19A8 /* RxCocoa */,
+				F596521427E7803A009B19A8 /* RxSwift */,
+				F596521727E7806F009B19A8 /* Charts */,
+				F596521A27E78C41009B19A8 /* RxGesture */,
 			);
 			productName = ems;
 			productReference = F5BE74CD27E5C99C007B435C /* ems.app */;
@@ -374,8 +392,9 @@
 			);
 			mainGroup = F5BE74C427E5C99C007B435C;
 			packageReferences = (
-				F5BE750A27E5CB27007B435C /* XCRemoteSwiftPackageReference "Moya" */,
-				F582523827E5E80400F63FD2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F596521127E7803A009B19A8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				F596521627E7806F009B19A8 /* XCRemoteSwiftPackageReference "Charts" */,
+				F596521927E78C41009B19A8 /* XCRemoteSwiftPackageReference "RxGesture" */,
 			);
 			productRefGroup = F5BE74CE27E5C99C007B435C /* Products */;
 			projectDirPath = "";
@@ -396,8 +415,10 @@
 				F5BE74DD27E5C99E007B435C /* LaunchScreen.storyboard in Resources */,
 				F56ACD9227E60FBB00828F09 /* historic_data.json in Resources */,
 				F5BE752327E5D2A0007B435C /* WidgetsView.xib in Resources */,
+				F56ACD9427E6105C00828F09 /* live_data.json in Resources */,
 				F5BE74DA27E5C99E007B435C /* Assets.xcassets in Resources */,
 				F5BE74D827E5C99C007B435C /* Main.storyboard in Resources */,
+				F56ACD9E27E77A8E00828F09 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,21 +444,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BE751127E5CB7F007B435C /* HistoricDTO.swift in Sources */,
-				F5BE751B27E5CCC4007B435C /* EMSMoya.swift in Sources */,
+				F56ACD9627E610B400828F09 /* Bundle+LoadJSON.swift in Sources */,
 				F582523327E5E30000F63FD2 /* WidgetsViewModel.swift in Sources */,
 				F5BE751527E5CBA3007B435C /* Mappable.swift in Sources */,
 				F582523D27E5F3B500F63FD2 /* Double+Percentage.swift in Sources */,
 				F5BE752127E5D288007B435C /* WidgetsViewController.swift in Sources */,
 				F56ACD8A27E602BF00828F09 /* GetHistoricUseCase.swift in Sources */,
+				F56ACD9A27E77A6E00828F09 /* DetailViewController.swift in Sources */,
 				F5BE751827E5CBCF007B435C /* Live.swift in Sources */,
 				F56ACD8C27E603B000828F09 /* GetLiveUseCase.swift in Sources */,
 				F5BE74D527E5C99C007B435C /* ViewController.swift in Sources */,
 				F5BE74D127E5C99C007B435C /* AppDelegate.swift in Sources */,
 				F5BE751227E5CB7F007B435C /* LiveDTO.swift in Sources */,
 				F5BE751F27E5CFAF007B435C /* LiveRepository.swift in Sources */,
-				F56ACD9027E608A900828F09 /* DefaultLiveRepository.swift in Sources */,
+				F56ACD9027E608A900828F09 /* DefaultHistoricRepository.swift in Sources */,
 				F5BE751927E5CBCF007B435C /* HistoricItem.swift in Sources */,
-				F56ACD8E27E6089800828F09 /* DefaultHistoricRepository.swift in Sources */,
+				F56ACD9C27E77A8500828F09 /* DetailViewModel.swift in Sources */,
+				F56ACD8E27E6089800828F09 /* DefaultLiveRepository.swift in Sources */,
+				F56ACD9827E616FA00828F09 /* Double+Decimal.swift in Sources */,
 				F5BE751D27E5CF96007B435C /* HistoricRepository.swift in Sources */,
 				F5BE74D327E5C99C007B435C /* SceneDelegate.swift in Sources */,
 			);
@@ -783,7 +807,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F582523827E5E80400F63FD2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+		F596521127E7803A009B19A8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
 			requirement = {
@@ -791,31 +815,44 @@
 				minimumVersion = 6.5.0;
 			};
 		};
-		F5BE750A27E5CB27007B435C /* XCRemoteSwiftPackageReference "Moya" */ = {
+		F596521627E7806F009B19A8 /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
-				kind = exactVersion;
-				version = 15.0.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		F596521927E78C41009B19A8 /* XCRemoteSwiftPackageReference "RxGesture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxGesture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F582523927E5E80400F63FD2 /* RxCocoa */ = {
+		F596521227E7803A009B19A8 /* RxCocoa */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F582523827E5E80400F63FD2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			package = F596521127E7803A009B19A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxCocoa;
 		};
-		F5BE750B27E5CB27007B435C /* Moya */ = {
+		F596521427E7803A009B19A8 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F5BE750A27E5CB27007B435C /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
+			package = F596521127E7803A009B19A8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
-		F5BE750D27E5CB27007B435C /* RxMoya */ = {
+		F596521727E7806F009B19A8 /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = F5BE750A27E5CB27007B435C /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
+			package = F596521627E7806F009B19A8 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		F596521A27E78C41009B19A8 /* RxGesture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F596521927E78C41009B19A8 /* XCRemoteSwiftPackageReference "RxGesture" */;
+			productName = RxGesture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

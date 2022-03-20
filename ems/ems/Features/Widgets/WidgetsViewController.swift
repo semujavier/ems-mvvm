@@ -9,9 +9,9 @@ import Foundation
 import UIKit
 import RxCocoa
 import RxSwift
+import RxGesture
 
 final class WidgetsViewController: UIViewController {
-    
     private var viewModel: WidgetsViewModel!
     private let disposeBag = DisposeBag()
     
@@ -23,6 +23,7 @@ final class WidgetsViewController: UIViewController {
     @IBOutlet weak var solarPercentageLabel: UILabel!
     @IBOutlet weak var gridPercentageLabel: UILabel!
     @IBOutlet weak var quasarPercentageLabel: UILabel!
+    @IBOutlet weak var supplyPercentageView: UIView!
     
     init(viewModel: WidgetsViewModel) {
         self.viewModel = viewModel
@@ -80,5 +81,17 @@ final class WidgetsViewController: UIViewController {
             .solarPercentage
             .drive(solarPercentageLabel.rx.text)
             .disposed(by: disposeBag)
+        
+        supplyPercentageView.rx
+            .tapGesture()
+            .when(.recognized)
+            .subscribe(onNext: { [weak self] _ in
+                let detailViewController = DetailViewController(
+                    viewModel: DetailViewModel(
+                        historicUseCase: DefaultGetHistoricUseCase(
+                            historicRepository: DefaultHistoricRepository())))
+                
+                self?.navigationController?.pushViewController(detailViewController, animated: true)
+            }).disposed(by: disposeBag)
     }
 }

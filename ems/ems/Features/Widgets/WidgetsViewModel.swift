@@ -24,7 +24,7 @@ final class WidgetsViewModel {
         let live = liveUseCase.execute()
                 
         solarLiveSupply = live
-            .map { "\($0.solarPower)"}
+            .map { $0.solarPower.toDecimal()}
             .asDriver(onErrorJustReturn: "N/A")
         
         gridLiveSupply = live
@@ -51,14 +51,14 @@ final class WidgetsViewModel {
             let discharged = $0.filter { $0.quasarsActivePower < 0}.map {
                 $0.quasarsActivePower
             }.reduce(0,+)
-            return "\(discharged)"
+            return discharged.toDecimal()
         }.asDriver(onErrorJustReturn: "N/A")
         
         quasarCharged = historic.map {
-            let discharged = $0.filter { $0.quasarsActivePower > 0}.map {
+            let charged = $0.filter { $0.quasarsActivePower > 0}.map {
                 $0.quasarsActivePower
             }.reduce(0,+)
-            return "\(discharged)"
+            return charged.toDecimal()
         }.asDriver(onErrorJustReturn: "N/A")
     }
 }

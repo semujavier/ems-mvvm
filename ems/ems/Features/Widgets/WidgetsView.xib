@@ -18,6 +18,7 @@
                 <outlet property="liveSolarPowerLabel" destination="f0t-OC-kej" id="BJ8-h4-ax8"/>
                 <outlet property="quasarPercentageLabel" destination="TFa-EV-Oc9" id="cno-Hq-WG6"/>
                 <outlet property="solarPercentageLabel" destination="jlR-EQ-AtZ" id="r9m-Ec-7bY"/>
+                <outlet property="supplyPercentageView" destination="0m5-rT-k0J" id="vm5-vT-nzR"/>
                 <outlet property="view" destination="iN0-l3-epB" id="jwj-Ik-vQ5"/>
             </connections>
         </placeholder>
@@ -42,8 +43,8 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1900000" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="alQ-Fw-E5q">
-                            <rect key="frame" x="8" y="48" width="110" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <rect key="frame" x="8" y="39" width="110" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -76,8 +77,8 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1900000" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zb0-MD-i0h">
-                            <rect key="frame" x="8" y="48" width="110" height="30"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <rect key="frame" x="8" y="39" width="110" height="48"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -196,19 +197,13 @@
                             <rect key="frame" x="8" y="32" width="252" height="20.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Solar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Af6-Ra-tNC">
-                                    <rect key="frame" x="0.0" y="0.0" width="84" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlR-EQ-AtZ">
-                                    <rect key="frame" x="84" y="0.0" width="84" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgt-5A-8ip">
-                                    <rect key="frame" x="168" y="0.0" width="84" height="20.5"/>
+                                    <rect key="frame" x="126" y="0.0" width="126" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -219,19 +214,13 @@
                             <rect key="frame" x="8" y="60.5" width="252" height="20.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Grid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZf-Up-cKj">
-                                    <rect key="frame" x="0.0" y="0.0" width="84" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBO-pQ-BGE">
-                                    <rect key="frame" x="84" y="0.0" width="84" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC9-PW-NS5">
-                                    <rect key="frame" x="168" y="0.0" width="84" height="20.5"/>
+                                    <rect key="frame" x="126" y="0.0" width="126" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -242,19 +231,13 @@
                             <rect key="frame" x="8" y="89" width="252" height="20.5"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Quasars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-1Y-f3t">
-                                    <rect key="frame" x="0.0" y="0.0" width="84" height="20.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="126" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFa-EV-Oc9">
-                                    <rect key="frame" x="84" y="0.0" width="84" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QW8-Ak-KzF">
-                                    <rect key="frame" x="168" y="0.0" width="84" height="20.5"/>
+                                    <rect key="frame" x="126" y="0.0" width="126" height="20.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
