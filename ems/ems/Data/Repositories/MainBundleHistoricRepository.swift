@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class DefaultHistoricRepository: HistoricRepository {
+class MainBundleHistoricRepository: HistoricRepository {
     func getHistoric() -> Observable<[HistoricItem]> {
         Single<[HistoricDTO]>.create { single in
             if let liveData = Bundle.main.loadJSON(type: [HistoricDTO].self, filename: "historic_data") {
@@ -17,7 +17,7 @@ class DefaultHistoricRepository: HistoricRepository {
                 single(.failure((DataError.unableToLoad)))
             }
             return Disposables.create()
-        }.map { $0.map {$0.toEntity() } }
+        }.map { $0.map {$0.toEntity()} }
             .asObservable()
     }
 }

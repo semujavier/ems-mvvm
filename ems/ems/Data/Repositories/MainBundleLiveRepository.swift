@@ -12,7 +12,7 @@ enum DataError: Error {
     case unableToLoad
 }
 
-class DefaultLiveRepository: LiveRepository {
+class MainBundleLiveRepository: LiveRepository {
     func getLive() -> Observable<Live> {
         Single<LiveDTO>.create { single in
             if let liveData = Bundle.main.loadJSON(type: LiveDTO.self, filename: "live_data") {

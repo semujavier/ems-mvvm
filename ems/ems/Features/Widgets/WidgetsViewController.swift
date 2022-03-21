@@ -86,12 +86,7 @@ final class WidgetsViewController: UIViewController {
             .tapGesture()
             .when(.recognized)
             .subscribe(onNext: { [weak self] _ in
-                let detailViewController = DetailViewController(
-                    viewModel: DetailViewModel(
-                        historicUseCase: DefaultGetHistoricUseCase(
-                            historicRepository: DefaultHistoricRepository())))
-                
-                self?.navigationController?.pushViewController(detailViewController, animated: true)
+                self?.viewModel.navigateDetail()
             }).disposed(by: disposeBag)
     }
 }

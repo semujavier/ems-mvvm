@@ -11,6 +11,7 @@ import Charts
 import UIKit
 
 final class DetailViewModel {
+    weak var coordinator : AppCoordinator!
     var chartData: Observable<LineChartData> = .just(LineChartData())
     let historicUseCase: GetHistoricUseCase
     

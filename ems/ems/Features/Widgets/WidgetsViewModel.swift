@@ -19,20 +19,26 @@ final class WidgetsViewModel {
     let gridPercentage: Driver<String>
     let quasarsPercentage: Driver<String>
     
-    init(liveUseCase: GetLiveUseCase, historicUseCase: GetHistoricUseCase) {
+    private let navigateDetailAction: () -> Void
+    
+    init(liveUseCase: GetLiveUseCase,
+         historicUseCase: GetHistoricUseCase,
+         navigateDetailAction: @escaping () -> Void
+    ) {
         let historic = historicUseCase.execute()
         let live = liveUseCase.execute()
+        self.navigateDetailAction = navigateDetailAction
                 
         solarLiveSupply = live
             .map { $0.solarPower.toDecimal()}
             .asDriver(onErrorJustReturn: "N/A")
         
         gridLiveSupply = live
-            .map { "\($0.gridPower)"}
+            .map { $0.gridPower.toDecimal() }
             .asDriver(onErrorJustReturn: "N/A")
         
         quasarsLiveSupply = live
-            .map { "\($0.quasarsPower)"}
+            .map { $0.quasarsPower.toDecimal() }
             .asDriver(onErrorJustReturn: "N/A")
         
         solarPercentage = live
@@ -60,5 +66,9 @@ final class WidgetsViewModel {
             }.reduce(0,+)
             return charged.toDecimal()
         }.asDriver(onErrorJustReturn: "N/A")
+    }
+    
+    func navigateDetail() {
+        navigateDetailAction()
     }
 }
