@@ -47,4 +47,13 @@ class WidgetsViewModelTests: XCTestCase {
         XCTAssertEqual(try! sut.gridPercentage.toBlocking().first(), "N/A")
         XCTAssertEqual(try! sut.quasarsPercentage.toBlocking().first(), "N/A")
     }
+    
+    func testNavigationCalled() {
+        sut = WidgetsViewModel(liveUseCase: DefaultGetLiveUseCase(liveRepository: LiveRepositoryMock.sample()),
+                               historicUseCase: DefaultGetHistoricUseCase(historicRepository: HistoricRepositoryMock.sample()),
+                               navigateDetailAction: { self.navigateCalled = true })
+        
+        sut.navigateDetail()
+        XCTAssert(navigateCalled)
+    }
 }
