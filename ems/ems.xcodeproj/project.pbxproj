@@ -11,6 +11,7 @@
 		F52B39F327E8844500714F62 /* HIstoricRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B39F227E8844500714F62 /* HIstoricRepositoryMock.swift */; };
 		F52B39F927E897AE00714F62 /* WidgetsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B39F827E897AE00714F62 /* WidgetsViewModelTests.swift */; };
 		F52B39FC27E89C7600714F62 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = F52B39FB27E89C7600714F62 /* RxBlocking */; };
+		F52B39FE27E8A05900714F62 /* WidgetBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52B39FD27E8A05800714F62 /* WidgetBackgroundView.swift */; };
 		F56ACD8A27E602BF00828F09 /* GetHistoricUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8927E602BF00828F09 /* GetHistoricUseCase.swift */; };
 		F56ACD8C27E603B000828F09 /* GetLiveUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8B27E603B000828F09 /* GetLiveUseCase.swift */; };
 		F56ACD8E27E6089800828F09 /* MainBundleLiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56ACD8D27E6089800828F09 /* MainBundleLiveRepository.swift */; };
@@ -68,6 +69,7 @@
 		F52B39F027E883A800714F62 /* LiveRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRepositoryMock.swift; sourceTree = "<group>"; };
 		F52B39F227E8844500714F62 /* HIstoricRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoricRepositoryMock.swift; sourceTree = "<group>"; };
 		F52B39F827E897AE00714F62 /* WidgetsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsViewModelTests.swift; sourceTree = "<group>"; };
+		F52B39FD27E8A05800714F62 /* WidgetBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetBackgroundView.swift; sourceTree = "<group>"; };
 		F56ACD8927E602BF00828F09 /* GetHistoricUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoricUseCase.swift; sourceTree = "<group>"; };
 		F56ACD8B27E603B000828F09 /* GetLiveUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLiveUseCase.swift; sourceTree = "<group>"; };
 		F56ACD8D27E6089800828F09 /* MainBundleLiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBundleLiveRepository.swift; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				F5BE752027E5D288007B435C /* WidgetsViewController.swift */,
 				F582523227E5E30000F63FD2 /* WidgetsViewModel.swift */,
 				F5BE752227E5D2A0007B435C /* WidgetsView.xib */,
+				F52B39FD27E8A05800714F62 /* WidgetBackgroundView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52B39FE27E8A05900714F62 /* WidgetBackgroundView.swift in Sources */,
 				F596521F27E7966E009B19A8 /* AppCoordinator.swift in Sources */,
 				F5BE751127E5CB7F007B435C /* HistoricDTO.swift in Sources */,
 				F56ACD9627E610B400828F09 /* Bundle+LoadJSON.swift in Sources */,

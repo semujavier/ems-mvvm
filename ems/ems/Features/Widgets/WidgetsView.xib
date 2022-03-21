@@ -27,7 +27,7 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="427"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUD-Sr-eaa" userLabel="Charged Widget">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUD-Sr-eaa" userLabel="Charged Widget" customClass="WidgetBackgroundView" customModule="ems" customModuleProvider="target">
                     <rect key="frame" x="16" y="16" width="126" height="126"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kWh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WbU-Ym-V8y">
@@ -61,7 +61,7 @@
                         <constraint firstItem="GQA-iO-J1E" firstAttribute="top" secondItem="SUD-Sr-eaa" secondAttribute="top" constant="8" id="uNh-tc-Osa"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsR-JG-KX8" userLabel="Discharged Widget">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsR-JG-KX8" userLabel="Discharged Widget" customClass="WidgetBackgroundView" customModule="ems" customModuleProvider="target">
                     <rect key="frame" x="158" y="16" width="126" height="126"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kWh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucA-Vg-gJl">
@@ -95,7 +95,7 @@
                         <constraint firstAttribute="width" secondItem="HsR-JG-KX8" secondAttribute="height" multiplier="1:1" id="tLh-7Q-u3A"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-bk-a53" userLabel="Quasar">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dhf-bk-a53" userLabel="Quasar" customClass="WidgetBackgroundView" customModule="ems" customModuleProvider="target">
                     <rect key="frame" x="16" y="158" width="268" height="117.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="OgT-9R-i7U" userLabel="Solar StackView">
@@ -190,7 +190,7 @@
                         <constraint firstAttribute="trailing" secondItem="OgT-9R-i7U" secondAttribute="trailing" constant="8" id="kBk-Gm-VbI"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-rT-k0J" userLabel="SupplyPercentage">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0m5-rT-k0J" userLabel="SupplyPercentage" customClass="WidgetBackgroundView" customModule="ems" customModuleProvider="target">
                     <rect key="frame" x="16" y="291.5" width="268" height="117.5"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-uh-E28" userLabel="Solar StackView">
